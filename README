@@ -1,0 +1,3 @@
+Simple program to prevent the X11 screensaver from starting between two times defined in the code.
+
+supplying the argument "reset" will re-enable the screensaver.
