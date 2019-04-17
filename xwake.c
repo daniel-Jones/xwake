@@ -71,6 +71,7 @@ main(int argc, char *argv[])
 	{
 		if (strcmp(argv[1], "reset") == 0)
 		{
+			puts("enabling screensaver and exiting");
 			XScreenSaverSuspend(dsp, False);
 			XFlush(dsp);
 			XCloseDisplay(dsp);
@@ -90,7 +91,6 @@ main(int argc, char *argv[])
 			XScreenSaverSuspend(dsp, True);
 			XFlush(dsp);
 			setwontsleep = 1;
-			puts("wont sleep");
 		}
 		else if (setwontsleep == 1 && endarr[0] == time[0] && endarr[1] == time[1])
 		{
