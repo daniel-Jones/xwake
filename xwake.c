@@ -43,8 +43,8 @@ gettriggertimes(int *startarr, int *endarr)
 {
 	char smodify[6];
 	char emodify[6];
-	strncpy(smodify, start, 5);
-	strncpy(emodify, end, 5);
+	strncpy(smodify, start, 6);
+	strncpy(emodify, end, 6);
 	startarr[0] = atoi(strtok(smodify, ":"));
 	startarr[1] = atoi(strtok(NULL, ":"));
 
