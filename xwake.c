@@ -26,8 +26,8 @@
  * end - the time to stop preventing the screen from sleeping
  * must be in "xx:xx" format
  */
-char start[] 	= "08:00";
-char end[] 	= "21:00";
+char *start 	= "08:00";
+char *end 	= "21:00";
 
 void
 gettime(int *store)
